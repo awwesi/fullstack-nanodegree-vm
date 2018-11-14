@@ -34,6 +34,7 @@ This website shows and edit showplaces of places with the following features:
 * change folder to /vagrant/catalog/
 * run from the commandline  
 `[Path to Directory]/python application.py`
+* to get the JSON file of all items of all places, use http://localhost:8000/catalog.json
 
 ## Authors
 
