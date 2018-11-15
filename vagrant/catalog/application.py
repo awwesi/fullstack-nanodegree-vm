@@ -189,7 +189,9 @@ def gconnect():
     # see if user exists, if it doesn't make a new one
     user_id = getUserID(data["email"])
     if not user_id:
-        user_id = createUser(login_session)
+        pword = ''.join(random.choice(string.ascii_uppercase + string.digits)
+                        for x in xrange(12))
+        user_id = createUser(login_session['email'], pword)
     login_session['user_id'] = user_id
 
     output = ''
